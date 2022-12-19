@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/mlafeldt/pkgcloud"
+	"github.com/sdemura/pkgcloud"
 )
 
 var usage = "Usage: pkgcloud-push user/repo[/distro/version] /path/to/packages\n"

@@ -11,7 +11,7 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/mlafeldt/pkgcloud/upload"
+	"github.com/sdemura/pkgcloud/upload"
 	"github.com/peterhellberg/link"
 	pb "gopkg.in/cheggaaa/pb.v1"
 )

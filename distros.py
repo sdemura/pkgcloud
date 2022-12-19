@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 
-import requests
-import os
 import json
+import os
+
+import requests
 
 PACKAGECLOUD_TOKEN = os.environ.get("PACKAGECLOUD_TOKEN")
 
-r = requests.get(f"https://{PACKAGECLOUD_TOKEN}:@packagecloud.io/api/v1/distributions.json")
+r = requests.get(
+    f"https://{PACKAGECLOUD_TOKEN}:@packagecloud.io/api/v1/distributions.json"
+)
 r.raise_for_status()
 
 j = r.json()
-
-
 
 try:
     for k in j.keys():
@@ -28,6 +29,3 @@ try:
                 print(distro)
 except:
     pass
-
-
-
